@@ -14,7 +14,7 @@ include_once("../componentes/header.php");
                     <div class="mb-4">
                         <p><i class="bi bi-telephone-fill text-primary"></i> <strong>Teléfono:</strong> +54 9 11 4587-<?php echo rand(100,999); ?></p>
                         <p><i class="bi bi-envelope-fill text-primary"></i> <strong>Correo:</strong> motorcloud@gmail.com</p>
-                        <p><i class="bi bi-geo-alt-fill text-primary"></i> <strong>Dirección:</strong> Ricardo Ford <?php echo rand(100,900); ?>, Buenos Aires</p>
+                        <p><i class="bi bi-geo-alt-fill text-primary"></i> <strong>Dirección:</strong> Ricardo Ford <?php echo rand(100,999); ?>, Buenos Aires</p>
                     </div>
 
                     <h4 class="mb-3">Envíanos un mensaje</h4>

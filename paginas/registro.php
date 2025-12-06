@@ -24,7 +24,7 @@ include_once("../componentes/header.php");
 <input type="password" class="form-control" name="password" required>
 </div>
 <div class="mb-3">
-<label class="form-label">Confirmar contraseña</label>
+<label class="form-label">Repetir contraseña</label>
 <input type="password" class="form-control" name="confirmar" required>
 </div>
 <button type="submit" class="btn btn-primary w-100">Registrarse</button>
