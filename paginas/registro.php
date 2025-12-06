@@ -1,0 +1,41 @@
+<?php
+include_once("../componentes/header.php");
+
+?>
+
+<body>
+<div class="container d-flex justify-content-center align-items-center" style="height: 100vh;">
+<div class="card shadow p-4" style="max-width: 450px; width: 100%;">
+<h3 class="text-center mb-4 text-primary fw-bold">MotorCloud</h3>
+<h5 class="text-center mb-3">Crear Cuenta</h5>
+<form action="registro_process.php" method="POST">
+<div class="mb-3">
+<label class="form-label">Nombre completo</label>
+<input type="text" class="form-control" name="nombre" required>
+</div>
+<div class="mb-3">
+<label class="form-label">Correo electrónico</label>
+<input type="email" class="form-control" name="email" required>
+</div>
+<div class="mb-3">
+<label class="form-label">Contraseña</label>
+<input type="password" class="form-control" name="password" required>
+</div>
+<div class="mb-3">
+<label class="form-label">Confirmar contraseña</label>
+<input type="password" class="form-control" name="confirmar" required>
+</div>
+<button type="submit" class="btn btn-primary w-100">Registrarse</button>
+<p class="text-center mt-3">¿Ya tienes cuenta? <a href="login.php">Inicia sesión</a></p>
+</form>
+</div>
+</div>
+</body>
+
+
+
+
+  <?php
+include_once("../componentes/footer.php");
+
+?>
