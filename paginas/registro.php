@@ -3,10 +3,12 @@ include_once("../componentes/header.php");
 
 ?>
 
-<body>
-<div class="container d-flex justify-content-center align-items-center" style="height: 100vh;">
+<div class="page-container">
+    <div class="content-wrap">
+<main>
+<div class="container d-flex justify-content-center align-items-center" style="height: 90vh;">
 <div class="card shadow p-4" style="max-width: 450px; width: 100%;">
-<h3 class="text-center mb-4 text-primary fw-bold">MotorCloud</h3>
+<h3 class="text-center mb-4 text-primary fw-bold"><a  href="../paginas/inicio.php" class="text-decoration-none">MotorCloud</a></h3>
 <h5 class="text-center mb-3">Crear Cuenta</h5>
 <form action="registro_process.php" method="POST">
 <div class="mb-3">
@@ -26,11 +28,18 @@ include_once("../componentes/header.php");
 <input type="password" class="form-control" name="confirmar" required>
 </div>
 <button type="submit" class="btn btn-primary w-100">Registrarse</button>
-<p class="text-center mt-3">¿Ya tienes cuenta? <a href="login.php">Inicia sesión</a></p>
+<p class="text-center mt-3">¿Ya tienes cuenta? <a href="../paginas/login.php">Inicia sesión</a></p>
 </form>
 </div>
 </div>
-</body>
+</main>
+    </div>
+</div>
+
+
+
+
+
 
 
 

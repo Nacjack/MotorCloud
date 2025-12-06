@@ -5,36 +5,28 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>MotorCloud - Compra y Venta de Autos</title>
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
-    <style>
-        body {
-            background-color: #f4f9ff;
-        }
-        .navbar {
-            background-color: #0d6efd;
-        }
-        .navbar-brand, .nav-link, .nav-link:visited {
-            color: #fff !important;
-        }
-        .hero {
-            background: linear-gradient(rgba(0, 51, 153, 0.7), rgba(0, 51, 153, 0.7)), url('https://images.pexels.com/photos/358070/pexels-photo-358070.jpeg');
-            background-size: cover;
-            background-position: center;
-            color: white;
-            padding: 80px 0;
-        }
-        .card-img-top {
-            height: 180px;
-            object-fit: cover;
-        }
-        .btn-primary {
-            background-color: #0d6efd;
-            border: none;
-        }
-        footer {
-            background-color: #0d6efd;
-            color: white;
-            padding: 20px 0;
-            margin-top: 40px;
-        }
-    </style>
+    <link rel="stylesheet" href="../style.css">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.5/font/bootstrap-icons.css" rel="stylesheet">
+    <link rel="icon" href="../img/icono.ico" type="image/x-icon" />
+
 </head>
+
+<body>
+
+
+<nav class="navbar navbar-expand-lg navbar-dark">
+  <div class="container-fluid px-3">
+    <a class="navbar-brand fw-bold" href="../paginas/inicio.php">MotorCloud</a>
+    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+    <div class="collapse navbar-collapse" id="navbarNav">
+      <ul class="navbar-nav ms-auto">
+        <li class="nav-item"><a class="nav-link" href="../paginas/inicio.php">Inicio</a></li>
+        <li class="nav-item"><a class="nav-link" href="../paginas/registro.php">Registrarse</a></li>
+        <li class="nav-item"><a class="nav-link" href="../paginas/login.php">Ingresar</a></li>
+        <li class="nav-item"><a class="nav-link" href="../paginas/contacto.php">Contacto</a></li>
+      </ul>
+    </div>
+  </div>
+</nav>
