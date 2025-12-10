@@ -1,3 +1,4 @@
+<?php session_start(); ?>
 <!DOCTYPE html>
 <html lang="es">
 <head>
@@ -22,11 +23,24 @@
     </button>
     <div class="collapse navbar-collapse" id="navbarNav">
       <ul class="navbar-nav ms-auto">
-        <li class="nav-item"><a class="nav-link" href="../paginas/inicio.php">Inicio</a></li>
-        <li class="nav-item"><a class="nav-link" href="../paginas/registro.php">Registrarse</a></li>
-        <li class="nav-item"><a class="nav-link" href="../paginas/login.php">Ingresar</a></li>
-        <li class="nav-item"><a class="nav-link" href="../paginas/contacto.php">Contacto</a></li>
-      </ul>
+<?php if (!isset($_SESSION["usuario"])): ?>
+
+    <li class="nav-item"><a class="nav-link" href="../paginas/login.php">Ingresar</a></li>
+    <li class="nav-item"><a class="nav-link" href="../paginas/registro.php">Registrarse</a></li>
+
+<?php else: ?>
+
+    <li class="nav-item dropdown">
+        <a class="nav-link dropdown-toggle" href="#" data-bs-toggle="dropdown"><?= $_SESSION["usuario"]; ?></a>
+        <ul class="dropdown-menu dropdown-menu-end">
+            <li><a class="dropdown-item" href="../paginas/logout.php">Cerrar sesión</a></li>
+        </ul>
+    </li>
+
+<?php endif; ?>
+
+    <li class="nav-item"><a class="nav-link" href="../paginas/contacto.php">Contacto</a></li>
+</ul>
     </div>
   </div>
 </nav>
