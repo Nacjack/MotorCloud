@@ -1,6 +1,6 @@
 <footer class="text-center">
     <div class="container">
-        <p class="m-0">MotorCloudd © 2025 - Compra y venta de autos</p>
+        <p class="m-0">MotorCloud © 2025 - Compra y venta de autos</p>
     </div>
 </footer>
 
